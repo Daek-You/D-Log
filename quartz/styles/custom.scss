@@ -1,3 +1,28 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+@font-face {
+    font-family: 'SamsungOne';
+    /* TTF와 WOFF 모두 선언하여 브라우저 호환성을 높입니다. */
+    src: url('/static/fonts/SamsungOne-400.woff') format('woff'),
+         url('/static/fonts/SamsungOne-400.ttf') format('truetype');
+    font-weight: 400;       /* 일반 두께 */
+    font-style: normal;
+    font-display: swap;     /* 폰트 로딩 중 시스템 폰트로 먼저 표시 */
+}
+
+/* 추가로 SamsungOne-700 파일도 가지고 계시므로 Bold 체도 선언해 줍니다. */
+@font-face {
+    font-family: 'SamsungOne';
+    src: url('/static/fonts/SamsungOne-700.woff') format('woff'),
+         url('/static/fonts/SamsungOne-700.ttf') format('truetype');
+    font-weight: 700; /* 굵은 두께 */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 폰트 적용 (body와 모든 텍스트에 적용) */
+body {
+    font-family: 'SamsungOne', sans-serif !important;
+}
