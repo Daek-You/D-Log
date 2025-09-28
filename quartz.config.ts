@@ -20,24 +20,24 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "SamsungOne",
+        body: "SamsungOne",
+        code: "Consolas",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ffffff",                     // [1] 배경색: 순수한 흰색 (Very Bright White)
+          lightgray: "#f0f0f0",                 // [2] 보조 배경색 (사이드바, 코드 블록 배경 등): 아주 밝은 회색
+          gray: "#c8c8c8",                      // [3] 경계선, 구분선 색상: 밝은 회색
+          darkgray: "#4e4e4e",                  // [4] 약한 텍스트, 아이콘 색상 (주 텍스트보다 연하게)
+          dark: "#202020",                      // [5] 주 텍스트 색상: 거의 검정에 가까운 진한 색
+          secondary: "#1a73e8",                 // [6] 보조 강조색 (링크 등): Google 계열의 청량한 파란색
+          tertiary: "#4285f4",                  // [7] 3차 강조색: Google 파란색 (보조와 유사하게 지정)
+          highlight: "rgba(26, 115, 232, 0.1)", // [8] 포커스/호버 효과: 강조색의 투명한 버전
+          textHighlight: "#fff23688",           // [9] 텍스트 하이라이트 색상은 그대로 유지하거나 취향에 맞게 수정
         },
         darkMode: {
           light: "#161618",
