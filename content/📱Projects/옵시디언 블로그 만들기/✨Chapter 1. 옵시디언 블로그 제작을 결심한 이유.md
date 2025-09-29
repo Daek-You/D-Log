@@ -1,4 +1,3 @@
-#Projects #Blog #Obsidian 
 
 # 1. Notion → Tistory
 
