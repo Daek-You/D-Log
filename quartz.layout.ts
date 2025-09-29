@@ -5,7 +5,17 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'Daek-You/DaekYou-Log',       // data-repo
+        repoId: 'R_kgDOP4QiYQ',             // data-repo-id
+        category: 'Announcements',          // data-category
+        categoryId: 'DIC_kwDOP4QiYc4CwBwj', // data-category-id
+      }
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/Daek-You",
