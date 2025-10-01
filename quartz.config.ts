@@ -36,7 +36,7 @@ const config: QuartzConfig = {
           darkgray: "#4e4e4e",                  // [4] 약한 텍스트, 아이콘 색상 (주 텍스트보다 연하게)
           dark: "#202020",                      // [5] 주 텍스트 색상: 거의 검정에 가까운 진한 색
           secondary: "#1a73e8",                 // [6] 보조 강조색 (링크 등): Google 계열의 청량한 파란색
-          tertiary: "#4285f4",                  // [7] 3차 강조색: Google 파란색 (보조와 유사하게 지정)
+          tertiary: "#797979ff",                  // [7] 3차 강조색: Google 파란색 (보조와 유사하게 지정)
           highlight: "rgba(26, 115, 232, 0.1)", // [8] 포커스/호버 효과: 강조색의 투명한 버전
           textHighlight: "#fff23688",           // [9] 텍스트 하이라이트 색상은 그대로 유지하거나 취향에 맞게 수정
         },
@@ -46,8 +46,8 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          secondary: "#c86df1ff",
+          tertiary: "#e9ececff",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
