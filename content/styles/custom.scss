@@ -1,0 +1,41 @@
+/* --- 1. 모서리 둥글게, 음영, 분리 효과 --- */
+
+/* 적용 대상: 코드 블록, 이미지, 그리고 필요하다면 인용구 등 카드 형태의 요소 */
+.code-container,
+.image-container,
+blockquote {
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -2px rgba(0, 0, 0, 0.08);    
+    /* 폰트 색상을 변경했으니, 대비를 위해 배경색도 명확하게 설정 */
+    background-color: var(--clr-lightgray);
+    
+    /* 부드러운 전환 효과를 위해 transition 추가 (호버 효과를 위함) */
+    transition: all 0.2s ease-in-out; 
+}
+
+
+/* 라이트 모드에서의 음영 (화이트 배경에 옅은 회색 그림자) */
+:root {
+    --shadow-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* 다크 모드에서의 음영 (어두운 배경에 짙은 색 그림자는 지저분해 보일 수 있음) */
+.dark {
+    --shadow-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- 2. 이미지 호버 효과 --- */
+
+/* 이미지 컨테이너 (부모 요소)에 호버 효과 적용 */
+.image-container:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.15), 
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* 이미지 (자체)에 호버 효과 적용 */
+.image-container img {
+    border-radius: inherit; 
+    transition: all 0.2s ease-in-out; 
+}
